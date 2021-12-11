@@ -2,12 +2,19 @@
   "name": "react",
   "version": "1.0.0",
   "description": "React example starter project",
-  "keywords": ["react", "starter"],
+  "keywords": [
+    "react",
+    "starter"
+  ],
   "main": "src/index.js",
   "dependencies": {
+    "fusioncharts": "3.18.0",
     "react": "17.0.2",
+    "react-data-table-component": "7.4.5",
     "react-dom": "17.0.2",
-    "react-scripts": "4.0.0"
+    "react-fusioncharts": "3.1.2",
+    "react-scripts": "4.0.0",
+    "styled-components": "5.3.3"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
@@ -19,5 +26,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
