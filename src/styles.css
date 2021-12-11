@@ -22,18 +22,15 @@
   margin: 3px;
 }
 
-.widget-internal-center,
 .stats {
   display: block;
-  margin: 3px;
-  padding: 3px;
+  margin: 1px;
+  padding: 2px;
 }
 
-.widget-internal-center,
 .stats,
 h2 {
-  color: red;
-  width: 60%;
+  width: 80%;
 }
 
 .rdt_TableBody {

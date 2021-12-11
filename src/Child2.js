@@ -8,25 +8,21 @@ export default (props) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        textAlign: "center"
+        textAlign: "center",
+        flexWrap: "wrap"
       }}
     >
       <div>
-        <div className="stats">
-          <h2>
-            Android <span style={{ color: "Grey" }}>453.67</span>
-          </h2>
-        </div>
-        <div className="stats">
-          <h2>
-            iPhone <span style={{ color: "Grey" }}>453.67</span>
-          </h2>
-        </div>
-        <div className="stats">
-          <h2>
-            windows <span style={{ color: "Grey" }}>453.67</span>
-          </h2>
-        </div>
+        {props.stats.map((a) => {
+          return (
+            <div className="stats">
+              <h2 style={{ color: props.TitleColor }}>
+                {a.title}{" "}
+                <span style={{ color: props.SubColor }}>{a.number}</span>
+              </h2>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
