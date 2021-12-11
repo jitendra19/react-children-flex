@@ -1,7 +1,7 @@
 import "./styles.css";
 import React, { Fragment } from "react";
 import CommonComponent from "./CommonContainer";
-import Child1 from "./ChildComponent";
+import Child1 from "./Child1";
 import Child2 from "./Child2";
 
 export default function App() {
