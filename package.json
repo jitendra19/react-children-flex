@@ -8,12 +8,11 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "fusioncharts": "3.18.0",
     "react": "17.0.2",
     "react-data-table-component": "7.4.5",
     "react-dom": "17.0.2",
-    "react-fusioncharts": "3.1.2",
     "react-scripts": "4.0.0",
+    "recharts": "2.1.6",
     "styled-components": "5.3.3"
   },
   "devDependencies": {
