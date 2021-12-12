@@ -19,6 +19,14 @@ const statsData2 = [
 ];
 
 export default function App() {
+  scaleMe = (e) => {
+    e.target.style.transform = "scale(1.5)";
+    e.target.style.transition = "transform 0.25s ease";
+    setTimeout(() => {
+      e.target.style.transform = "scale(1)";
+      e.target.style.transition = "transform 0.25s ease";
+    }, 1000);
+  };
   return (
     <Fragment>
       <div className="App">
@@ -37,9 +45,18 @@ export default function App() {
         <CommonComponent>
           <Stats TitleColor="Green" SubColor="grey" stats={statsData2} />
         </CommonComponent>
-        <CommonComponent>
-        <img src={`https://picsum.photos/300`} />
-        </CommonComponent>
+        {Array(50)
+          .fill()
+          .map((a) => {
+            return (
+              <CommonComponent>
+                <img
+                  onClick={this.scaleMe}
+                  src={`https://picsum.photos/300?cache=${Math.random()}`}
+                />
+              </CommonComponent>
+            );
+          })}
       </div>
     </Fragment>
   );
