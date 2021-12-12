@@ -37,6 +37,9 @@ export default function App() {
         <CommonComponent>
           <Stats TitleColor="Green" SubColor="grey" stats={statsData2} />
         </CommonComponent>
+        <CommonComponent>
+        <img src={`https://picsum.photos/300`} />
+        </CommonComponent>
       </div>
     </Fragment>
   );
